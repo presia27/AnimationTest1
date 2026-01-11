@@ -37,6 +37,8 @@ class GameEngine {
     };
 
     startInput() {
+        // client area is the area visible on the webpage
+        // The canvas boundingClientRect is the location of the canvas on the page
         const getXandY = e => ({
             x: e.clientX - this.ctx.canvas.getBoundingClientRect().left,
             y: e.clientY - this.ctx.canvas.getBoundingClientRect().top

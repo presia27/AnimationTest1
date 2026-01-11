@@ -16,3 +16,7 @@ ASSET_MANAGER.downloadAll(() => {
 
 	gameEngine.start();
 });
+
+function toggleDebug() {
+	gameEngine.options.debugging = !gameEngine.options.debugging;
+}

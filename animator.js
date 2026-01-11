@@ -47,6 +47,11 @@ class Animator {
     );
   };
 
+  drawFrameWithBoundingBox(tick, ctx, x, y, scale) {
+    ctx.strokeRect(x, y, this.width * scale, this.height * scale);
+    this.drawFrame(tick, ctx, x, y, scale);
+  }
+
   currentFrame() {
     return Math.floor(this.elapsedTime / this.frameDuration);
   }
