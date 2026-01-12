@@ -1,15 +1,3 @@
-const directions = {
-  UPLEFT: 0,
-  UP: 1,
-  UPRIGHT: 2,
-  LEFT: 3,
-  IDLE: 4,
-  RIGHT: 5,
-  DOWNLEFT: 6,
-  DOWN: 7,
-  DOWNRIGHT: 8
-}
-
 class Cat {
   constructor(game, x, y) {
     Object.assign(this, { game, x, y });
@@ -18,8 +6,6 @@ class Cat {
 
     this.direction = 0; // 0-8: UPLEFT, UP, UPRIGHT, LEFT, IDLE, RIGHT, DOWNLEFT, DOWN, DOWNRIGHT at least for now
 
-    this.x = 0;
-    this.y = 0;
     this.speed = 200;
 
     this.animations = []; // store animation states

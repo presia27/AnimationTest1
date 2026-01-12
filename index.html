@@ -11,12 +11,30 @@
     <script type="text/javascript" src="./util.js"></script>
     <script type="text/javascript" src="./main.js"></script>
     <script type="text/javascript" src="./animator.js"></script>
+    <script type="text/javascript" src="./background.js"></script>
     <script type="text/javascript" src="./cat.js"></script>
 </head>
-<body>
-    <canvas id="gameWorld" width="1024" height="768" style="background: white; border: 1px solid black" tabindex="0" autofocus></canvas>
-    <div>
-        <button type="button" id="btnDebug" onclick="toggleDebug()">Toggle Debugging</button>
+<body style="font-family: sans-serif;">
+    <div style="display: flex; flex-direction: row; gap: 16px;">
+        <div>
+            <canvas id="gameWorld" width="1024" height="768" style="background: white; border: 1px solid black" tabindex="0" autofocus></canvas>
+            <div>
+                <button type="button" id="btnDebug" onclick="toggleDebug()">Toggle Debugging</button>
+            </div>
+        </div>
+        <div>
+            <h1>Test Cat Animation</h1>
+            <p>Preston Sia (presia27), forked from Dr. Chris Marriott's (algorithm0r) <a href="https://github.com/algorithm0r/Empty--GameEngine">repository</a></p>
+            <p>Cat sprites by "asneakylittlebe" (Ellie) on  <a href="https://www.pinterest.com/pin/86412886593184356/" target="_blank">Pinterest</a></p>
+            <p>View the source code for this project on my <a href="https://github.com/presia27/AnimationTest1">GitHub</a></p>
+            <h2>About This Animation</h2>
+            <p>
+                The original sprite sheet has about 34 animations if I counted correctly (some are still frames).
+                I've animated 8 of them corresponding to different directions of the cat sprite walking. You can
+                use the WASD keys, including combinations, to view the different animations as the cat walks across
+                the canvas.
+            </p>
+        </div>
     </div>
 </body>
 </html>

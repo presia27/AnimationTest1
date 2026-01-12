@@ -12,7 +12,8 @@ ASSET_MANAGER.downloadAll(() => {
 
 	gameEngine.init(ctx);
 
-	gameEngine.addEntity(new Cat(gameEngine, 0, 0))
+	gameEngine.addEntity(new Cat(gameEngine, gameEngine.ctx.canvas.width / 2 - 64, gameEngine.ctx.canvas.height / 2 - 64))
+	gameEngine.addEntity(new Background(gameEngine, 0, 0));
 
 	gameEngine.start();
 });

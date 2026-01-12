@@ -48,7 +48,10 @@ class Animator {
   };
 
   drawFrameWithBoundingBox(tick, ctx, x, y, scale) {
+    ctx.save();
+    ctx.strokeStyle = "red";
     ctx.strokeRect(x, y, this.width * scale, this.height * scale);
+    ctx.restore();
     this.drawFrame(tick, ctx, x, y, scale);
   }
 
