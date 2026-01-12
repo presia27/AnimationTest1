@@ -3,6 +3,7 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>psia97 Test Cat Animation</title>
   
     <script type="text/javascript" src="./assetmanager.js"></script>
@@ -13,9 +14,20 @@
     <script type="text/javascript" src="./animator.js"></script>
     <script type="text/javascript" src="./background.js"></script>
     <script type="text/javascript" src="./cat.js"></script>
+
+    <style>
+        @media (min-width: 1440px) {
+            #mainContainer {
+                display: flex;
+                flex-direction: row;
+                gap: 16px;
+            }
+        }
+        
+    </style>
 </head>
 <body style="font-family: sans-serif;">
-    <div style="display: flex; flex-direction: row; gap: 16px;">
+    <div id="mainContainer">
         <div>
             <canvas id="gameWorld" width="1024" height="768" style="background: white; border: 1px solid black" tabindex="0" autofocus></canvas>
             <div>
